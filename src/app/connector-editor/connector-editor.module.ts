@@ -24,7 +24,7 @@ import { ConnectorEditorComponent } from './components/connector-editor/connecto
 import { ConnectorEditorRoutingModule } from './router/connector-editor-routing.module';
 import { ConnectorHeaderComponent } from './components/connector-header/connector-header.component';
 import { SharedModule } from 'ama-sdk';
-import { JsonEditorModule, provideEntity, ENTITIES_REDUCER_TOKEN } from 'ama-sdk';
+import { CodeEditorModule, provideEntity, ENTITIES_REDUCER_TOKEN } from 'ama-sdk';
 import { EffectsModule } from '@ngrx/effects';
 import { ConnectorEditorEffects } from './store/connector-editor.effects';
 import { ConnectorEditorService } from './services/connector-editor.service';
@@ -43,7 +43,7 @@ import { getConnectorUploaderProvider } from './extension/connector-uploader.ext
         ExtensionsModule,
         ConnectorEditorRoutingModule,
         SharedModule,
-        JsonEditorModule,
+        CodeEditorModule,
         EffectsModule.forFeature([ConnectorEditorEffects]),
         StoreModule.forFeature('entities', ENTITIES_REDUCER_TOKEN),
         StoreModule.forFeature(CONNECTOR_EDITOR_STATE_NAME, connectorEditorReducer)
