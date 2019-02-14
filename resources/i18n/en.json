@@ -273,6 +273,10 @@
             }
         },
         "PROCESS_EDITOR": {
+            "TABS": {
+                "PROCESS_EDITOR": "Process editor",
+                "JSON_EDITOR": "XML editor"
+            },
             "PRIORITIES": {
                 "LOW": "Low",
                 "MEDIUM": "Medium",
